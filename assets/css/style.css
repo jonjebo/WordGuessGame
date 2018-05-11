@@ -1,0 +1,28 @@
+/*Header*/
+.header {
+    background: black;
+
+}
+
+/*headerWords*/
+.headerWords {
+    color: coral;
+    text-align: center;
+}
+body {
+    background: black;
+}
+.hangmanrules {
+    color: white;
+}
+.rules {
+    color: white;
+}
+.jumbotron {
+    background-image: url('../images/hangman-background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.hangmanGuesses {
+    color: white;
+}

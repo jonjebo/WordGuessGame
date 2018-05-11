@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--RESET CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!--BOOTCAMP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!--STYLE CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Game</title>
+    <link rel="icon" href="http://www.tudormaxim.ro/wp-content/uploads/2017/02/lebada_neagra.png" sizes="32x32" />
+
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="headerWords">
+            <h1>Hangman Game!</h1>
+        </div>
+    </div>
+    <!--Center Box-->
+    <main role="main">
+        <div class="container">
+            <div class="jumbotron jumbotron">
+                <div class="rules">
+                    <h2>Rules:</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 hangmanrules">
+                        <p>1. Press any key to get started!</p>
+                        <p>2. Try to guess the words based on the amount of blanks on screen.</p>
+                        <p>3. Do not die! Your amount of guesses will be dispalyed on screen and when they are at "0" you lose.</p>
+                        <p>4. Your guesses will be displayed on screen so do not guess the some thing more than once.</p>
+                        <p>5. If you manage to guess the word then, YOU WIN! Good Luck!</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 hangmanGuesses">
+                        <h2>Score:</h2>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 guessInput">
+                        <div class="input-group">
+                        <input type="text" id="letterGuess" class="form-control" placeholder="type a letter and press submit">
+                            <button class="btn btn-secondary" type="button" id="submit" onclick="userMakesGuess()">Submit</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!--JAVASCRIPT AT BOTTOM!-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
